@@ -1,4 +1,4 @@
-# Backend – AI Interior Designer
+# Backend – MyInterior-AI
 
 This directory contains the **FastAPI** backend for the AI Interior Designer project. The backend serves as the bridge between the React frontend and the [Replicate](https://replicate.com/) **ControlNet** model, processing user inputs and generating interior design images.
 

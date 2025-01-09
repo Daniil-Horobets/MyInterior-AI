@@ -1,4 +1,4 @@
-# Frontend – AI Interior Designer
+# Frontend – MyInterior-AI
 
 This directory contains the **React.js** frontend for the AI Interior Designer project. The frontend provides an intuitive user interface for creating interior designs based on uploaded sketches and user-selected prompts.
 

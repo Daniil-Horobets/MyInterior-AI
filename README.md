@@ -1,4 +1,4 @@
-# Myinterior-AI
+# MyInterior-AI
 
 This project demonstrates **creating interior designs** from a user-provided **sketch** image. It uses a **React** frontend for prompt selection and image upload, and a **FastAPI** backend that calls [Replicate’s](https://replicate.com/) **ControlNet** model. The sketch is interpreted as “canny edges,” then combined with the user’s prompt (including style, color, lighting, etc.) to generate a brand-new interior design concept. **ControlNet** deep learning model can steer an existing diffusion model (Stable Diffusion) based on an edge map.
 
