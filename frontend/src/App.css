@@ -1,0 +1,41 @@
+/* Global resets and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #FFFFFF;
+  color: #333;
+}
+
+/* Headings spacing */
+h1, h2, h3, h4 {
+  margin: 0.5em 0;
+}
+
+/* Generic button classes (used as base for .btn-primary, etc.) */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Primary vs. secondary button styles (fallback if needed) */
+.btn-primary {
+  background: #6200ea;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+}
+
+.btn-secondary {
+  background: #03dac5;
+  color: #333;
+  padding: 0.4em 0.8em;
+  margin: 0.5em 0;
+}
+
+.btn-generate {
+  background: #6200ea;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  margin: 1em 0;
+}
