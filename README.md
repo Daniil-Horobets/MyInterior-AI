@@ -74,5 +74,6 @@ This approach enriches stable diffusion by adding an extra “control path” to
 
 - **[backend/README.md](./backend/README.md)** – Explains how the FastAPI service works.  
 - **[frontend/README.md](./frontend/README.md)** – Explains how the React app is structured.
+- **[model/README.md](./model/README.md)** – Model as Cog container (can be used localy).
 
 ---
