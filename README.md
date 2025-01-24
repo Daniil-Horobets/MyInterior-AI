@@ -1,6 +1,6 @@
 # MyInterior-AI
 
-This project demonstrates **creating interior designs** from a user-provided **sketch** image. It uses a **React** frontend for prompt selection and image upload, and a **FastAPI** backend that calls [Replicate’s](https://replicate.com/) **ControlNet** model. The sketch is interpreted as “canny edges,” then combined with the user’s prompt (including style, color, lighting, etc.) to generate a brand-new interior design concept. **ControlNet** deep learning model can steer an existing diffusion model (Stable Diffusion) based on an edge map.
+This project demonstrates **creating interior designs** from a user-provided **sketch** image. It uses a **React** frontend for prompt selection and image upload, and a **FastAPI** backend that calls [Replicate’s](https://replicate.com/) **ControlNet** model. The sketch is interpreted as “canny edges,” combined with the user’s prompt (including style, color, lighting, etc.) to generate a brand-new interior design concept. **ControlNet** deep learning model can steer an existing diffusion model (Stable Diffusion) based on an edge map.
 
 ![MainScreen](assets/MainScreen.png)
 
@@ -32,9 +32,9 @@ This project demonstrates **creating interior designs** from a user-provided **s
 
 ## 2. Project Description – Interior Design from Sketch
 
-1. **Upload Sketch**: You provide a **drawn** or **scanned** interior outline – for instance, a rough floorplan or a simple room shape.  
+1. **Upload Sketch**: You provide a **drawn** or **scanned** interior outline – for instance, a rough floor plan or a simple room shape.  
 2. **Pick Prompts**: Choose **style** (e.g., “Scandinavian”, “loft”), **colors** (e.g., “white”, “navy blue”), **lighting** types, etc. You can also add negative prompts (unwanted features like “blurry” or “pixelated”).  
-3. **Generate**: The **backend** calls replicate.com’s **ControlNet** model, sending your **sketch** (converted to canny edges) and your textual prompts.  
+3. **Generate**: The **backend** calls replicate.com’s **ControlNet** model, sending your **sketch** (converted to canny edges) and textual prompts.  
 4. **Results**: You’ll see a newly generated “interior design” concept that tries to respect your sketch’s shape and your chosen style or color scheme.
 
 ---
@@ -43,7 +43,7 @@ This project demonstrates **creating interior designs** from a user-provided **s
 
 ### Model Summary
 
-**ControlNet** model on [replicate.com](https://replicate.com/) apply “canny edge” conditioning to a Stable Diffusion generator. The controlling idea is:
+**ControlNet** model on [replicate.com](https://replicate.com/) applies “canny edge” conditioning to a Stable Diffusion generator. The controlling idea is:
 - Convert your sketch to an edge map.  
 - Condition the diffusion model on these edges.  
 - Combine with your prompts (e.g., “Scandinavian living room, bright space, wooden floors”).
@@ -74,6 +74,6 @@ This approach enriches stable diffusion by adding an extra “control path” to
 
 - **[backend/README.md](./backend/README.md)** – Explains how the FastAPI service works.  
 - **[frontend/README.md](./frontend/README.md)** – Explains how the React app is structured.
-- **[model/README.md](./model/README.md)** – Model as Cog container (can be used localy).
+- **[model/README.md](./model/README.md)** – Model as Cog container (can be used locally).
 
 ---
